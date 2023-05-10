@@ -1,0 +1,239 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 2%;
+  color: #a3a3a3;
+}
+
+body {
+  background: url(/Images/blue-clouds-day-fluffy-53594.jpeg);
+  background-size: cover;
+}
+
+.dark-theme {
+  --chat-background: rgba(90, 100, 100, 0.279);
+  --chat-panel-background: #131719;
+  --chat-bubble-background: #14181a;
+  --chat-bubble-active-background: #171a1b;
+  --chat-add-button-background: #212324;
+  --chat-send-button-background: #8147fc;
+  --chat-text-color: #a3a3a3;
+  --chat-options-svg: #a3a3a3;
+}
+
+.App-header {
+  background-color: #303536;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: rgb(246, 243, 243);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.App-header > h1 {
+  margin-left: 100px;
+}
+
+.Login {
+  width: 400px;
+  margin: auto;
+  background-color: #303536;
+  display: flex;
+}
+
+.Login > h1 {
+  margin-left: 100px;
+}
+
+.Login-header {
+  color: white;
+  border-bottom: #303536 solid 1px;
+  margin: auto;
+  padding: 15px;
+  padding-top: 27px;
+}
+
+.Login-button {
+  width: fit-content;
+  display: flex;
+  margin: auto;
+  margin-top: 30%;
+  transition-duration: 0.4s;
+  border-radius: 15px;
+}
+.Submit-button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.Submit-button {
+  width: 130px;
+  color: white;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.Login-window {
+  background-color: #303536;
+  width: 400px;
+  height: 420px;
+  border-radius: 25px;
+  border: solid black 2px;
+  margin: auto;
+}
+
+.Login-text {
+  color: white;
+  font-size: medium;
+}
+
+.Chat-app {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.Chat-window {
+  background-color: #303536;
+  width: 700px;
+  height: 800px;
+
+  border-radius: 25px;
+  border: #212324 solid 1px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.Messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.container {
+  height: 680px;
+  overflow: auto;
+}
+.Messages-message {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Messages-message.currentMember {
+  /*justify-content: flex-end;*/
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.Message-content {
+  display: inline-block;
+}
+
+.currentMember > .Message-content {
+  align-items: flex-end;
+}
+
+.Messages-message > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 20%;
+  display: flex;
+  margin: 0 10px -10px;
+  color: black;
+  text-align: justify;
+  font-size: 30px;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+.Message-content > .username {
+  display: block;
+  color: rgb(194, 189, 189);
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.Message-content > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: #817d7d;
+  color: white;
+  display: inline-block;
+}
+
+.currentMember > .Message-content .text {
+  background-color: rgb(4, 156, 42);
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid rgb(4, 156, 42);
+  flex-grow: 1;
+  margin-bottom: 0px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: rgb(4, 156, 42);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.Input-area {
+  margin-top: auto;
+}
+.emoji-button {
+  border-radius: 15px;
+}
+
+.emoji-button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.Chat-icons {
+  font-size: 30px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+.Chat-icon-sm {
+  font-size: 23px;
+}
